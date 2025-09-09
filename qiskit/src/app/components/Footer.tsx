@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function MainWebsiteFooter() {
   return (
       <footer id="footer" className="py-16 px-4 sm:px-6 lg:px-8" style={{
-        background: 'linear-gradient(to right, #3b82f6, #8b5cf6, #f472b6, #8b5cf6, #3b82f6)'
+         background: 'radial-gradient(ellipse at top, #DA82C5, #BB87DD, #A484F0, #6489FE,#88B3FF )'
       }}>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
