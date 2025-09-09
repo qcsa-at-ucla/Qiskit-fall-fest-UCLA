@@ -73,8 +73,14 @@ export default function MainWebsiteFooter() {
 
           {/* Right side - UCLA CQSE Logo */}
           <div className="flex-shrink-0">
+          <Link 
+            href="https://cqse.ucla.edu" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200"
+          >
             <div className="flex items-center space-x-3">
-              <div className="bg-white text-black px-4 py-2 font-bold text-lg">
+              <div className="bg-white text-indigo-500 px-4 py-2 font-bold text-lg">
                 UCLA
               </div>
               <div className="text-white">
@@ -82,8 +88,8 @@ export default function MainWebsiteFooter() {
                 <div className="font-semibold text-sm">& Engineering</div>
               </div>
             </div>
+            </Link>
           </div>
-
         </div>
       </div>
     </footer>

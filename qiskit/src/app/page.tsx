@@ -5,9 +5,9 @@ import Header from "./Components/Header";
 
 export default function Home() {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <main id="main-content">
+      <main id="main-content" className="flex-grow">
         <SponsorsText />
         <Sponsors />
         {/* Add other components or content here as needed */}
