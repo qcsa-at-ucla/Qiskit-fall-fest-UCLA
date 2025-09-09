@@ -22,7 +22,7 @@ export default function MainWebsiteHeader() {
             <Link href="/" className="flex items-center">
               <div className="w-32 h-20 flex items-center justify-center">
                 <Image
-                  src= {'/images/Final_QCSA_Logo-15.png'}
+                  src= {'/images/Final_QCSA_Logo-16.png'}
                   alt="QCSA Logo"
                   width={128}
                   height={40}
@@ -39,25 +39,25 @@ export default function MainWebsiteHeader() {
               href="/events" 
               className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200"
             >
-              Events
+              Home
             </Link>
             <Link 
               href="/about" 
               className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200"
             >
-              About
+              Event
             </Link>
             <Link 
               href="/resources" 
               className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200"
             >
-              Resources
+              Team
             </Link>
             <Link 
               href="/join-us" 
               className="bg-[#234285] text-white px-6 py-2 rounded-md font-semibold text-lg hover:bg-blue-700 transition-colors duration-200 shadow-md"
             >
-              Join us
+              Register
             </Link>
           </nav>
 
@@ -98,28 +98,28 @@ export default function MainWebsiteHeader() {
                 className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-blue-50 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Events
+                Home
               </Link>
               <Link 
                 href="/about" 
                 className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-blue-50 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                About
+                Event
               </Link>
               <Link 
                 href="/resources" 
                 className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-blue-50 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Resources
+                Team
               </Link>
               <Link 
                 href="/join-us" 
                 className="bg-[#234285] text-white px-6 py-3 rounded-md font-semibold text-lg hover:bg-blue-700 transition-colors duration-200 shadow-md inline-block text-center mt-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Join us
+                Register
               </Link>
             </div>
           </div>

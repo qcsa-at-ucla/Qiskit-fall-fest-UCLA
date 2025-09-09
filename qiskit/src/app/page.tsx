@@ -1,4 +1,4 @@
-import Sponsors from "./Components/Sponsors";
+import Sponsors from "./Components/SponsorsOnPage";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 
@@ -8,9 +8,9 @@ export default function Home() {
       <Header />
       <main id="main-content">
         <Sponsors />
+        {/* Add other components or content here as needed */}
       </main>
       <Footer />
-      {/* Add other components or content here as needed */}
     </div>
   );
 }
