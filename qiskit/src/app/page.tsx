@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import IBM from "./components/IBM";
 import QCSA from "./components/QCSA";
 import Speakers from "./components/Speakers";
+import Schedule from "./components/schedule";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <IBM />
         <SponsorsText />
         <Sponsors />
+        <Schedule />
         <Speakers/>
         {/* Add other components or content here as needed */}
       </main>
