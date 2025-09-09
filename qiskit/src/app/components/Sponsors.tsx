@@ -86,7 +86,7 @@ const InfiniteCarousel = ({ direction = 'left' }: { direction?: 'left' | 'right'
 </div>
       `}</style>
       
-      <section className="w-full py-8" style={{ backgroundColor: 'black' }} aria-label="Sponsor carousel" >
+      <section className="w-full py-2" style={{ backgroundColor: 'black' }} aria-label="Sponsor carousel" >
         <div className="w-full px-4">
           <div 
             className="relative overflow-hidden"

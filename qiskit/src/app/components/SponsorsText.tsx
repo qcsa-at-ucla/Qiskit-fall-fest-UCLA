@@ -1,7 +1,7 @@
 export default function BetweenPage() {
   return (
     <>
-    <div className="bg-black flex flex-col items-center justify-center p-2 sm:p-4 lg:pb-12 lg:pt-2">
+    <div className="bg-black flex flex-col items-center justify-center py-2">
     <h2 
   className="font-kantumruy text-4xl sm:text-3xl md:text-4xl font-semibold mb-4 sm:mb-6 md:mb-8 text-center"
   style={{
