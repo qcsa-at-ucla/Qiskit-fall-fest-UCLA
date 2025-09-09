@@ -27,6 +27,7 @@ export default function MainWebsiteFooter() {
                 className="object-contain max-w-none"
                 onError={(e) => { e.currentTarget.src = '/images/placeholder-logo.jpg'; }}
               />
+              </Link>
             </div>
           </div>
 
