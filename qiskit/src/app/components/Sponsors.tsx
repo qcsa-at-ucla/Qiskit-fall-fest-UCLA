@@ -86,7 +86,7 @@ const InfiniteCarousel = ({ direction = 'left' }: { direction?: 'left' | 'right'
 </div>
       `}</style>
       
-      <section className="w-full py-8" style={{ backgroundColor: '#F3F8FF' }} aria-label="Sponsor carousel" >
+      <section className="w-full py-2" style={{ backgroundColor: 'black' }} aria-label="Sponsor carousel" >
         <div className="w-full px-4">
           <div 
             className="relative overflow-hidden"
@@ -97,12 +97,12 @@ const InfiniteCarousel = ({ direction = 'left' }: { direction?: 'left' | 'right'
             {/* Gradient overlays - hidden from screen readers */}
             <div 
               className="absolute left-0 top-0 w-16 sm:w-24 md:w-32 h-full z-10 pointer-events-none" 
-              style={{ background: 'linear-gradient(to right, #F3F8FF, transparent)' }}
+              style={{ background: 'linear-gradient(to right, black, transparent)' }}
               aria-hidden="true"
             ></div>
             <div 
               className="absolute right-0 top-0 w-16 sm:w-24 md:w-32 h-full z-10 pointer-events-none" 
-              style={{ background: 'linear-gradient(to left, #F3F8FF, transparent)' }}
+              style={{ background: 'linear-gradient(to left, black, transparent)' }}
               aria-hidden="true"
             ></div>
             
@@ -117,8 +117,9 @@ const InfiniteCarousel = ({ direction = 'left' }: { direction?: 'left' | 'right'
                   href={sponsor.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-shrink-0 mx-4 sm:mx-6 md:mx-8 flex items-center justify-center h-20 w-32 sm:h-24 sm:w-36 md:h-28 md:w-44 lg:h-40 lg:w-60 bg-white rounded-lg transition-all duration-300 cursor-pointer hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                  className="flex-shrink-0 mx-4 sm:mx-6 md:mx-8 flex items-center justify-center h-20 w-32 sm:h-24 sm:w-36 md:h-28 md:w-44 lg:h-40 lg:w-60 rounded-lg transition-all duration-300 cursor-pointer hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                   style={{
+                    background: 'linear-gradient(to right, #C3B5FF, #DFB1F9, #F0B3EB, #DFB1F9, #C3B5FF)',
                     boxShadow: '0 10px 15px -3px rgba(51, 102, 255, 0.1), 0 4px 6px -2px rgba(51, 102, 255, 0.05)',
                   }}
                   onMouseEnter={(e) => {
@@ -147,8 +148,9 @@ const InfiniteCarousel = ({ direction = 'left' }: { direction?: 'left' | 'right'
                   href={sponsor.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-shrink-0 mx-4 sm:mx-6 md:mx-8 flex items-center justify-center h-20 w-32 sm:h-24 sm:w-36 md:h-28 md:w-44 lg:h-40 lg:w-60 bg-white rounded-lg transition-all duration-300 cursor-pointer hover:scale-105"
+                  className="flex-shrink-0 mx-4 sm:mx-6 md:mx-8 flex items-center justify-center h-20 w-32 sm:h-24 sm:w-36 md:h-28 md:w-44 lg:h-40 lg:w-60 rounded-lg transition-all duration-300 cursor-pointer hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                   style={{
+                    background: 'linear-gradient(to right, #C3B5FF, #DFB1F9, #F0B3EB, #DFB1F9, #C3B5FF)',
                     boxShadow: '0 10px 15px -3px rgba(51, 102, 255, 0.1), 0 4px 6px -2px rgba(51, 102, 255, 0.05)',
                   }}
                   onMouseEnter={(e) => {
