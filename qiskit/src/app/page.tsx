@@ -4,6 +4,7 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import IBM from "./Components/IBM";
 import QCSA from "./Components/QCSA";
+import Speakers from "./components/Speakers";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <IBM />
         <SponsorsText />
         <Sponsors />
+        <Speakers/>
         {/* Add other components or content here as needed */}
       </main>
       <Footer />
