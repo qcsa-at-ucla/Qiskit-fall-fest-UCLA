@@ -45,19 +45,19 @@ export default function MainWebsiteHeader() {
               href="https://qcsa.vercel.app/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200"
+              className="text-white hover:text-gray-200 font-medium text-lg transition-colors duration-200"
             >
               Home
             </Link>
             <Link 
               href="/events" 
-              className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200"
+              className="text-white hover:text-gray-200 font-medium text-lg transition-colors duration-200"
             >
               Event
             </Link>
             <Link 
               href="/team" 
-              className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200"
+              className="text-white hover:text-gray-200 font-medium text-lg transition-colors duration-200"
             >
               Team
             </Link>
@@ -65,7 +65,7 @@ export default function MainWebsiteHeader() {
               href="https://docs.google.com/forms/d/1qEnczUAZCPBf7nwKpcQiose-gXdhg1cWlr1eX4v-CkM/edit" 
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#234285] text-white px-6 py-2 rounded-md font-semibold text-lg hover:bg-blue-700 transition-colors duration-200 shadow-md"
+              className="bg-white text-black px-6 py-2 rounded-md font-semibold text-lg hover:bg-blue-700 transition-colors duration-200 shadow-md"
             >
               Register
             </Link>
@@ -75,7 +75,7 @@ export default function MainWebsiteHeader() {
           <div className="md:hidden">
             <button 
               onClick={toggleMobileMenu}
-              className="text-gray-700 hover:text-[#234285] transition-colors p-2"
+              className="text-white hover:text-gray-200 transition-colors p-2"
               aria-label="Toggle menu"
               aria-expanded={isMobileMenuOpen}
             >
@@ -101,27 +101,27 @@ export default function MainWebsiteHeader() {
             ? 'max-h-96 opacity-100 mt-4 pb-4' 
             : 'max-h-0 opacity-0 overflow-hidden'
         }`}>
-          <div className="border-t border-blue-300 pt-4">
+          <div className="border-t border-white border-opacity-30 pt-4">
             <div className="flex flex-col space-y-3">
               <Link 
                 href="https://qcsa.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-blue-50 rounded-md"
+                className="text-white hover:text-black font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-white hover:bg-opacity-20 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 href="/events" 
-                className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-blue-50 rounded-md"
+                className="text-white hover:text-black font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-white hover:bg-opacity-20 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Event
               </Link>
               <Link 
                 href="/team" 
-                className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-blue-50 rounded-md"
+                className="text-white hover:text-black font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-white hover:bg-opacity-20 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Team
@@ -130,7 +130,7 @@ export default function MainWebsiteHeader() {
                 href="https://docs.google.com/forms/d/1qEnczUAZCPBf7nwKpcQiose-gXdhg1cWlr1eX4v-CkM/edit" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#234285] text-white px-6 py-3 rounded-md font-semibold text-lg hover:bg-blue-700 transition-colors duration-200 shadow-md inline-block text-center mt-2"
+                className="bg-white text-black px-6 py-3 rounded-md font-semibold text-lg hover:bg-gray-200 hover:text-black transition-colors duration-200 shadow-md inline-block text-center mt-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Register
@@ -138,6 +138,17 @@ export default function MainWebsiteHeader() {
             </div>
           </div>
         </nav>
+          {/* Also update the mobile menu button to be white */}
+      <div className="md:hidden">
+        <button 
+          onClick={toggleMobileMenu}
+          className="text-white hover:text-gray-200 transition-colors p-2"
+          aria-label="Toggle menu"
+          aria-expanded={isMobileMenuOpen}
+        >
+
+        </button>
+        </div>
 
       </div>
     </header>
