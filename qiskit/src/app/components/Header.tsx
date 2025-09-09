@@ -65,7 +65,7 @@ export default function MainWebsiteHeader() {
               href="https://docs.google.com/forms/d/1qEnczUAZCPBf7nwKpcQiose-gXdhg1cWlr1eX4v-CkM/edit" 
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-black px-6 py-2 rounded-md font-semibold text-lg hover:bg-blue-700 transition-colors duration-200 shadow-md"
+              className="bg-white text-black px-6 py-2 rounded-md font-semibold text-lg hover:bg-gray-200 transition-colors duration-200 shadow-md"
             >
               Register
             </Link>
