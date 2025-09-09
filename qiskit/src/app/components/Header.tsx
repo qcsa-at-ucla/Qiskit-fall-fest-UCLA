@@ -13,7 +13,9 @@ export default function MainWebsiteHeader() {
   };
 
   return (
-    <header className="bg-gradient-to-b from-blue-200 to-blue-100 py-4 px-4 sm:px-6 lg:px-8 shadow-sm">
+    <header className="py-4 px-4 sm:px-6 lg:px-8 shadow-sm" style={{
+      background: 'linear-gradient(to right, #3b82f6, #8b5cf6, #f472b6, #8b5cf6, #3b82f6)'
+    }}>
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
           
