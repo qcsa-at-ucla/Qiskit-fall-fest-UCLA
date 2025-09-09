@@ -17,9 +17,9 @@ const InfiniteCarousel = ({ direction = 'left' }: { direction?: 'left' | 'right'
   }, []);
 
   const sponsors = [
-    { name: 'Sponsor1', logo: '/images/google-logo.png', url: 'https://about.google/' },
-    { name: 'Sponsor2', logo: '/images/nvidia-logo.png', url: 'https://nvidia.com' },
-    { name: 'Sponsor3', logo: '/images/rigetti-logo.png', url: 'https://rigetti.com' },
+    { name: 'Sponsor1', logo: '/images/replacement.png', url: 'https://about.google/' },
+    { name: 'Sponsor2', logo: '/images/replacement.png', url: 'https://nvidia.com' },
+    { name: 'Sponsor3', logo: '/images/replacement.png', url: 'https://rigetti.com' },
   ];
 
   const handleKeyDown = (e: React.KeyboardEvent, sponsor: { name: string; logo: string; url: string }) => {
