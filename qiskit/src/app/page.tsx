@@ -1,11 +1,13 @@
-import Sponsors from "./Components/Sponsors";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
+import Sponsors from "./components/Sponsors";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import QiskitFallFest from "./components/qiskit_fall_fest";
 
 export default function Home() {
   return (
     <div>
       <Header />
+      <QiskitFallFest />
       <main id="main-content">
         <Sponsors />
       </main>
