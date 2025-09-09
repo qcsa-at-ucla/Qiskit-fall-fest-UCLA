@@ -80,7 +80,7 @@ export default function MainWebsiteFooter() {
             className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200"
           >
             <div className="flex items-center space-x-3">
-              <div className="bg-white text-indigo-500 px-4 py-2 font-bold text-lg">
+             <div className="bg-white px-4 py-2 font-bold text-lg" style={{ color: '#234284' }}>
                 UCLA
               </div>
               <div className="text-white">
