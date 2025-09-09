@@ -19,7 +19,11 @@ export default function MainWebsiteHeader() {
           
           {/* Left side - QCSA Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center">
+            <Link 
+            href="https://qcsa.vercel.app/"
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center  hover:opacity-80 transition-opacity duration-200">
               <div className="w-32 h-20 flex items-center justify-center">
                 <Image
                   src= {'/images/Final_QCSA_Logo-16.png'}
