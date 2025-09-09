@@ -12,6 +12,12 @@ export default function MainWebsiteFooter() {
           {/* Left side - QCSA Logo */}
           <div className="flex-shrink-0">
             <div className="w-40 h-24 flex items-center justify-center">
+            <Link 
+              href="https://qcsa.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity duration-200"
+            >
               <Image
                 // src={'/images/Final_QCSA_Logo-17.png'}
                 src={'/images/Final_QCSA_Logo-17.png'}
