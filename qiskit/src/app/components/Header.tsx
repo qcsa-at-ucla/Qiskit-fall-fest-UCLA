@@ -36,25 +36,29 @@ export default function MainWebsiteHeader() {
           {/* Center/Right - Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link 
-              href="/events" 
+              href="https://qcsa.vercel.app/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200"
             >
               Home
             </Link>
             <Link 
-              href="/about" 
+              href="/events" 
               className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200"
             >
               Event
             </Link>
             <Link 
-              href="/resources" 
+              href="/team" 
               className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200"
             >
               Team
             </Link>
             <Link 
-              href="/join-us" 
+              href="https://docs.google.com/forms/d/1qEnczUAZCPBf7nwKpcQiose-gXdhg1cWlr1eX4v-CkM/edit" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#234285] text-white px-6 py-2 rounded-md font-semibold text-lg hover:bg-blue-700 transition-colors duration-200 shadow-md"
             >
               Register
@@ -94,28 +98,32 @@ export default function MainWebsiteHeader() {
           <div className="border-t border-blue-300 pt-4">
             <div className="flex flex-col space-y-3">
               <Link 
-                href="/events" 
+                href="https://qcsa.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-blue-50 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
-                href="/about" 
+                href="/events" 
                 className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-blue-50 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Event
               </Link>
               <Link 
-                href="/resources" 
+                href="/team" 
                 className="text-gray-700 hover:text-[#234285] font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-blue-50 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Team
               </Link>
               <Link 
-                href="/join-us" 
+                href="https://docs.google.com/forms/d/1qEnczUAZCPBf7nwKpcQiose-gXdhg1cWlr1eX4v-CkM/edit" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-[#234285] text-white px-6 py-3 rounded-md font-semibold text-lg hover:bg-blue-700 transition-colors duration-200 shadow-md inline-block text-center mt-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
