@@ -22,8 +22,8 @@ export default function MainWebsiteHeader() {
           {/* Left side - QCSA Logo */}
           <div className="flex-shrink-0">
             <Link 
-            href="https://qcsa.vercel.app/"
-            target="_blank" 
+            href="http://localhost:3000"
+            // target="_blank" 
             rel="noopener noreferrer" 
             className="flex items-center  hover:opacity-80 transition-opacity duration-200">
               <div className="w-32 h-20 flex items-center justify-center">
@@ -42,15 +42,15 @@ export default function MainWebsiteHeader() {
           {/* Center/Right - Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link 
-              href="https://qcsa.vercel.app/" 
-              target="_blank"
+              href="http://localhost:3000/" 
+              // target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-200 font-medium text-lg transition-colors duration-200"
             >
               Home
             </Link>
             <Link 
-              href="/events" 
+              href="/schedule" 
               className="text-white hover:text-gray-200 font-medium text-lg transition-colors duration-200"
             >
               Event
