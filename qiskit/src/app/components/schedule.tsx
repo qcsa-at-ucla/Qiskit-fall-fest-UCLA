@@ -110,6 +110,8 @@ const scheduleData: DaySchedule[] = [
 const Schedule: React.FC = () => {
   const [expandedDay, setExpandedDay] = useState<number | null>(null);
 
+  const svgBackground = `url("data:image/svg+xml,${encodeURIComponent('<svg viewBox="0 0 1086 290" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" rx="30" fill="url(#paint0_radial_12_155)"/><defs><radialGradient id="paint0_radial_12_155" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(543 145) scale(886 525.067)"><stop stop-color="#FF7EB6"/><stop offset="0.860259" stop-color="#4589FF"/><stop offset="1" stop-color="#A56EFF"/></radialGradient></defs></svg>')}")`;
+
   const toggleExpanded = (index: number) => {
     setExpandedDay(expandedDay === index ? null : index);
   };
@@ -143,7 +145,8 @@ const Schedule: React.FC = () => {
               key={index}
               className="rounded-2xl p-8 cursor-pointer hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 relative overflow-hidden"
               style={{
-                background: 'linear-gradient(to right, #3b82f6, #8b5cf6, #f472b6, #8b5cf6, #3b82f6)'
+                backgroundImage: svgBackground,
+                backgroundSize: 'cover'
               }}
               onClick={() => toggleExpanded(index)}
             >

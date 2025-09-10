@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const InfiniteCarousel = ({ direction = 'left' }: { direction?: 'left' | 'right' }) => {
   const [reducedMotion, setReducedMotion] = useState(false);
@@ -132,11 +133,14 @@ const InfiniteCarousel = ({ direction = 'left' }: { direction?: 'left' | 'right'
                   aria-label={`Visit ${sponsor.name} website`}
                   tabIndex={0}
                 >
-                  <img
+                  <Image
                     src={sponsor.logo}
                     alt={`${sponsor.name} logo`}
+                    width={220}
+                    height={80}
                     className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 focus:grayscale-0 transition-all duration-300"
                     loading="lazy"
+                    unoptimized
                   />
                 </a>
               ))}
@@ -148,7 +152,7 @@ const InfiniteCarousel = ({ direction = 'left' }: { direction?: 'left' | 'right'
                   href={sponsor.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-shrink-0 mx-4 sm:mx-6 md:mx-8 flex items-center justify-center h-20 w-32 sm:h-24 sm:w-36 md:h-28 md:w-44 lg:h-40 lg:w-60 rounded-lg transition-all duration-300 cursor-pointer hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                  className="mb-32 flex-shrink-0 mx-4 sm:mx-6 md:mx-8 flex items-center justify-center h-20 w-32 sm:h-24 sm:w-36 md:h-28 md:w-44 lg:h-40 lg:w-60 rounded-lg transition-all duration-300 cursor-pointer hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                   style={{
                     background: 'linear-gradient(to right, #C3B5FF, #DFB1F9, #F0B3EB, #DFB1F9, #C3B5FF)',
                     boxShadow: '0 10px 15px -3px rgba(51, 102, 255, 0.1), 0 4px 6px -2px rgba(51, 102, 255, 0.05)',
@@ -162,11 +166,14 @@ const InfiniteCarousel = ({ direction = 'left' }: { direction?: 'left' | 'right'
                   aria-hidden="true"
                   tabIndex={-1}
                 >
-                  <img
+                  <Image
                     src={sponsor.logo}
                     alt=""
+                    width={220}
+                    height={80}
                     className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
                     loading="lazy"
+                    unoptimized
                   />
                 </a>
               ))}
@@ -186,6 +193,35 @@ const InfiniteCarousel = ({ direction = 'left' }: { direction?: 'left' | 'right'
               ))}
             </ul>
           </div>
+          
+          {/* Contact information */}
+          <div className="text-center mt-8 mb-6">
+            <p className="text-white text-lg font-kamtamruy">
+              If you&apos;re an interested sponsor or have any inquiries,<br />
+              please contact us at{' '}
+              <a
+                href="mailto:quantum.ucla@gmail.com"
+                className="transition-colors duration-200 gradient-text"
+                style={{
+                  backgroundImage: 'linear-gradient(90deg, #fb7185 0%, #a78bfa 50%, #60a5fa 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  color: 'transparent'
+                }}
+              >
+                quantum.ucla@gmail.com
+              </a>
+            </p>
+          </div>
+          
+          <Image
+            src="/images/atom1.png"
+            alt="QCSA Logo"
+            width={150}
+            height={200}
+            className="mx-auto mb-6 block" 
+          />
         </div>
       </section>
     </>
