@@ -22,7 +22,7 @@ export default function MainWebsiteHeader() {
           {/* Left side - QCSA Logo */}
           <div className="flex-shrink-0">
             <Link 
-            href="http://localhost:3000"
+            href="https://qiskit-fall-fest-ucla.vercel.app/"
             // target="_blank" 
             rel="noopener noreferrer" 
             className="flex items-center  hover:opacity-80 transition-opacity duration-200">
@@ -42,7 +42,7 @@ export default function MainWebsiteHeader() {
           {/* Center/Right - Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link 
-              href="http://localhost:3000/" 
+              href="https://qiskit-fall-fest-ucla.vercel.app/" 
               // target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-200 font-medium text-lg transition-colors duration-200"
