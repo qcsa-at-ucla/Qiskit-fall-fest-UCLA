@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IBM Qiskit Fall Fest 2025
 
-## Getting Started
+Welcome to the official website for the **Qiskit Fall Fest 2025**, organized by the Quantum Computing Student Association (QCSA) at UCLA! This three-day event celebrates quantum computing education, innovation, and community building.
 
-First, run the development server:
+## 🎯 Event Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**📅 Dates:** October 17th - 19th, 2025  
+**🏛️ Location:** UCLA Campus  
+**🎪 Format:** Hybrid (In-person + Online)
+
+### Event Highlights
+
+- **Day 1:** Opening Ceremony & Networking
+  - Inspiring keynote speakers from IBM and quantum industry
+  - Career panel with 10-20 quantum professionals
+  - Networking sessions with refreshments
+
+- **Day 2:** Hands-on Qiskit Workshop
+  - Guided learning with Qiskit experts
+  - Interactive challenges and tutorials
+  - Quantum circuit design and algorithm implementation
+
+- **Day 3:** Hackathon & Closing Ceremony
+  - Team-based quantum computing projects
+  - Jupyter notebook submissions
+  - Award ceremony and winner announcements
+
+## 🏗️ Project Structure
+
+```text
+src/
+├── app/
+│   ├── components/          # React components
+│   │   ├── Header.tsx       # Navigation header
+│   │   ├── Footer.tsx       # Site footer with links
+│   │   ├── qiskit_fall_fest.tsx  # Hero section
+│   │   ├── QCSA.tsx         # About QCSA section
+│   │   ├── IBM.tsx          # About IBM Qiskit
+│   │   ├── Speakers.tsx     # Featured speakers
+│   │   ├── schedule.tsx     # Event schedule
+│   │   ├── Sponsors.tsx     # Sponsor showcase
+│   │   ├── team.tsx         # Organizing team
+│   │   └── ...              # Other components
+│   ├── team/               # Team page
+│   ├── layout.tsx          # Root layout
+│   ├── page.tsx            # Home page
+│   └── globals.css         # Global styles
+└── public/
+    └── images/             # Static assets and images
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** Next.js 15.5.2 with App Router
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS 4.0
+- **Components:** React 19.1.0
+- **Build Tool:** Turbopack
+- **Linting:** ESLint with Next.js config
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **Responsive Design:** Mobile-first approach with Tailwind CSS
+- **Modern UI/UX:** Gradient backgrounds and smooth animations
+- **Interactive Schedule:** Expandable day-by-day event timeline
+- **Speaker Showcase:** Dynamic speaker and team member profiles
+- **Sponsor Integration:** Animated sponsor carousel
+- **Accessibility:** ARIA labels and semantic HTML
+- **Performance:** Optimized images and fast loading
 
-To learn more about Next.js, take a look at the following resources:
+## About QCSA
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The **Quantum Computing Student Association (QCSA)** at UCLA is dedicated to:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Advancing quantum computing education and research
+- Building a community of quantum enthusiasts
+- Facilitating industry connections and career opportunities
+- Organizing workshops, hackathons, and networking events
 
-## Deploy on Vercel
+### Contact Information
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Email:** <quantum.ucla@gmail.com>
+- **Website:** [qcsa.vercel.app](https://qiskit-fall-fest-ucla.vercel.app/)
+- **LinkedIn:** [QCSA UCLA](https://www.linkedin.com/company/quantum-computing-student-association-ucla)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Sponsors & Partners
+
+Special thanks to our sponsors and partners:
+
+- **UCLA Center for Quantum Science & Engineering** - Academic partner
+- And many more industry partners supporting quantum education!
+- **IBM Qiskit** - Primary sponsor and technology partner
+
+## 📄 License
+
+This project is maintained by QCSA at UCLA. For collaboration or usage inquiries, please contact us at <quantum.ucla@gmail.com>.
+
+## 🎉 Join Us
+
+Ready to dive into the quantum future? Register for IBM Qiskit Fall Fest 2025 and be part of the quantum computing revolution!
+
+---
+
+Built with ❤️ by the QCSA team at UCLA

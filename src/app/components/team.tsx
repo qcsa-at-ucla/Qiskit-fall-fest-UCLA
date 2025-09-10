@@ -12,7 +12,7 @@ const boardMembers = [
     year: "2nd Year",
   bio: "Ilaana is an undergraduate at UCLA studying Biophysics and on the QCSA leadership board. She is involved in the research of computational fluid dynamics to model blood vessels, talent development via mixed-methods psychology, and modeling distant stars in the Milky Way galaxy. Ilaana has previously worked with the American Cancer Society, ACM, City of Austin Law Department, Society of Robotic Surgeons, and Ascension Seton Medical Center in Austin. At UCLA, Ilaana is an editor at the Society and Genetics Research Journal and co-manager of the Upsilon Lab CFD group. She is also a nationally registered Emergency Medical Technician. Outside of her academic involvements, Ilaana loves Roblox, Minecraft, and caffeine. ",
   image: "/images/ilaana.png",
-  linkedin: "https://www.linkedin.com/"
+  linkedin: "https://www.linkedin.com/in/ilaanak/"
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const boardMembers = [
     year: "2nd Year",
     bio: "Harshita is a second-year Computer Science and Engineering student at UCLA, minoring in Disability Studies. She is passionate about digital accessibility and inclusive design, and recently launched NextA11y, a web accessibility bootcamp for middle and high school students in India. Outside of coding, Harshita enjoys 3D modeling in SOLIDWORKS, sketching, and exploring campus.",
   image: "/images/harshita.png",
-  linkedin: "https://www.linkedin.com/"
+  linkedin: "https://www.linkedin.com/in/harshita-kukreja-28h/"
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const boardMembers = [
     year: "4th Year",
     bio: "Sanskriti is a fourth year undergraduate bioengineering student at UCLA. She enjoys exploring quantum computing for chemistry and biological applications. She has previously led the industry collaboration with QCSA, BruinAI, and Fetch.ai to explore the use of hybrid quantum-CNNs for predicting protein-ligand binding energies. She loves hearing about projects other people are working on and are excited about, so contact her any time to chat over lunch :)",
   image: "/images/sanskriti.png",
-  linkedin: "https://www.linkedin.com/"
+  linkedin: "https://www.linkedin.com/in/sanskriti/"
   },
    {
     id: 6,
@@ -52,7 +52,7 @@ const boardMembers = [
     year: "2nd Year",
     bio: "Emma is a second year undergraduate Computer Science student at UCLA with an interest in software development and AI. In her free time, she enjoys playing volleyball, visiting cafes, and learning Japanese.",
   image: "/images/emma.png",
-  linkedin: "https://www.linkedin.com/"
+  linkedin: "https://www.linkedin.com/in/emma-zhang-511838245/"
   },
   
  
@@ -64,7 +64,7 @@ const boardMembers = [
     year: "2nd-Year",
     bio: "Kimberley is a second-year undergraduate studying Design Media Arts and Psychology. She is part of QCSA’s design team, creating engaging websites and developing their visual branding. She is excited to learn more about quantum science while building her design skills. Kimberley previously interned in communications at BOUSD and is currently involved in Daily Bruin, BruinLife, Adobe Creatives, and Stratist Prep. In her free time, she enjoys spontaneous side-quests, playing tennis, photography, and sketch-booking.",
   image: "/images/kimberley.png",
-  linkedin: "https://www.linkedin.com/"
+  linkedin: "https://www.linkedin.com/in/kimberleywu/"
   },
   {
     id: 8,
@@ -74,7 +74,7 @@ const boardMembers = [
     year: "2nd Year",
     bio: "Gina is a second year undergraduate Cognitive Science and Architecture student at UCLA. She is a part of the QCSA's design team and eager to create an intuitive and immersive website experience for all. Gina is passionate about learning more about the art of quantum while developing design skills. At UCLA Gina is involved in the Data-Graphics section of the Daily Bruin, secretary for the American Institute of Architecture Students, and worked as a designer for a journaling app called Rose Garden. In her free time you can find her exploring LA for new thrift finds and cafes.",
   image: "/images/gina.png",
-  linkedin: "https://www.linkedin.com/"
+  linkedin: "https://www.linkedin.com/in/gina-namkung/"
   },
  
 ];
