@@ -80,7 +80,7 @@ The **Quantum Computing Student Association (QCSA)** at UCLA is dedicated to:
 ### Contact Information
 
 - **Email:** <quantum.ucla@gmail.com>
-- **Website:** [qcsa.vercel.app](https://qiskit-fall-fest-ucla.vercel.app/)
+- **Website:** [Qiskit Fall Fest @ UCLA](https://qiskit-fall-fest-ucla.vercel.app/)
 - **LinkedIn:** [QCSA UCLA](https://www.linkedin.com/company/quantum-computing-student-association-ucla)
 
 ## 🤝 Sponsors & Partners
