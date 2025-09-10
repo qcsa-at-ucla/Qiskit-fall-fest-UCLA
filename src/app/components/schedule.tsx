@@ -110,10 +110,8 @@ const scheduleData: DaySchedule[] = [
 const Schedule: React.FC = () => {
   const [expandedDay, setExpandedDay] = useState<number | null>(null);
 
-  const svgBackground = `url("data:image/svg+xml,${encodeURIComponent('<svg viewBox="0 0 1086 290" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" rx="30" fill="url(#paint0_radial_12_155)"/><defs><radialGradient id="paint0_radial_12_155" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(543 145) scale(886 525.067)"><stop stop-color="#FF7EB6"/><stop offset="0.860259" stop-color="#4589FF"/><stop offset="1" stop-color="#A56EFF"/></radialGradient></defs></svg>')}")`;
-
   const toggleExpanded = (index: number) => {
-    setExpandedDay(expandedDay === index ? null : index);
+    setExpandedDay(expandedDay === index ? null : index); 
   };
 
   return (
@@ -126,7 +124,7 @@ const Schedule: React.FC = () => {
                 style={{
                     background: 'linear-gradient(to right, #3b82f6, #8b5cf6, #f472b6, #8b5cf6, #3b82f6)',
                     WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
+                    WebkitTextFillColor: 'transparent', 
                     backgroundClip: 'text'
                 }}
                 >
@@ -145,8 +143,10 @@ const Schedule: React.FC = () => {
               key={index}
               className="rounded-2xl p-8 cursor-pointer hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 relative overflow-hidden"
               style={{
-                backgroundImage: svgBackground,
-                backgroundSize: 'cover'
+                backgroundImage: 'url(/images/schedule_rectangle.png)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
               }}
               onClick={() => toggleExpanded(index)}
             >
@@ -201,9 +201,18 @@ const Schedule: React.FC = () => {
                     {day.schedule.map((item, itemIndex) => (
                       <div
                         key={itemIndex}
-                        className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20"
+                        className="backdrop-blur-sm rounded-lg p-4 border border-white/20 relative overflow-hidden"
+                        style={{
+                          backgroundImage: 'url(/images/schedule_rectangle.png)',
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                          backgroundRepeat: 'no-repeat'
+                        }}
                       >
-                        <div className="flex flex-col md:flex-row md:items-start gap-4">
+                        {/* Background overlay for better text readability */}
+                        <div className="absolute inset-0 bg-black/30 rounded-lg"></div>
+                        
+                        <div className="flex flex-col md:flex-row md:items-start gap-4 relative z-10">
                           <div className="md:w-48 flex-shrink-0">
                             <span className="inline-block bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium">
                               {item.time}
