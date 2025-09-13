@@ -45,19 +45,19 @@ export default function MainWebsiteHeader() {
               href="https://qiskit-fall-fest-ucla.vercel.app/" 
               // target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-200 font-medium text-lg transition-colors duration-200"
+              className="text-white hover:text-gray-200 font-semibold text-lg transition-colors duration-200"
             >
               Home
             </Link>
             <Link 
               href="/schedule" 
-              className="text-white hover:text-gray-200 font-medium text-lg transition-colors duration-200"
+              className="text-white hover:text-gray-200 font-semibold text-lg transition-colors duration-200"
             >
               Event
             </Link>
             <Link 
               href="/team" 
-              className="text-white hover:text-gray-200 font-medium text-lg transition-colors duration-200"
+              className="text-white hover:text-gray-200 font-semibold text-lg transition-colors duration-200"
             >
               Team
             </Link>
@@ -107,21 +107,21 @@ export default function MainWebsiteHeader() {
                 href="https://qcsa.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-black font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-white hover:bg-opacity-20 rounded-md"
+                className="text-white hover:text-black font-semibold text-lg transition-colors duration-200 py-2 px-2 hover:bg-white hover:bg-opacity-20 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 href="/events" 
-                className="text-white hover:text-black font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-white hover:bg-opacity-20 rounded-md"
+                className="text-white hover:text-black font-semibold text-lg transition-colors duration-200 py-2 px-2 hover:bg-white hover:bg-opacity-20 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Event
               </Link>
               <Link 
                 href="/team" 
-                className="text-white hover:text-black font-medium text-lg transition-colors duration-200 py-2 px-2 hover:bg-white hover:bg-opacity-20 rounded-md"
+                className="text-white hover:text-black font-semibold text-lg transition-colors duration-200 py-2 px-2 hover:bg-white hover:bg-opacity-20 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Team
