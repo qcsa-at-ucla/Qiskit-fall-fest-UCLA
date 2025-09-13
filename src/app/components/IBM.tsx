@@ -21,12 +21,12 @@ export default function AboutUs() {
                     display: 'inline-block'
                 }}
                 >
-                  IBM Qiskit
+                  Qiskit Fall Festival
                 </h2>
                 
                 <div className="space-y-4">
                   <p className="text-lg md:text-xl leading-relaxed font-kantumruy text-white">
-                    yap yap yap
+                    Qiskit Fall Fest is a collection of quantum computing events that allows students, researchers and industry professionals to participate in various quantum-themed activities — including quantum challenges, hackathons, coding competitions, workshops, social events, and more. Each year, IBM® partners with a select group of university students and other volunteer hosts to help them plan and run the global roster of Fall Fest events. 
                   </p>
                 </div>
                 
@@ -34,7 +34,9 @@ export default function AboutUs() {
                 <div className="pt-6">
                   <div className="flex justify-start">
                     <Link 
-                      href="../about/" 
+                      href="https://research.ibm.com/events/qiskit-fall-fest-2025" 
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="px-8 py-4 text-lg font-kantumruy text-white font-semibold rounded-full hover:opacity-80 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block text-center transition-all duration-200"
                       style={{
                         background: 'linear-gradient(to right, #3b82f6, #8b5cf6, #f472b6)'

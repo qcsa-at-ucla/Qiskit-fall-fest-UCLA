@@ -40,7 +40,7 @@ export default function QCSA() {
 
                 <div className="space-y-4">
                   <p className="text-lg md:text-xl leading-relaxed font-kantumruy text-white">
-                    yap yap yap
+                    The premier quantum science and technology organization at UCLA. Host talks by professors, students, and other institutions. Undergrad and Grad organization under CQSE for everything under the umbrella of quantum information science, including quantum computers, sensors, and algorithms.
                   </p>
                 </div>
                 
@@ -48,7 +48,9 @@ export default function QCSA() {
                 <div className="pt-6">
                   <div className="flex justify-start">
                     <Link 
-                      href="../about/" 
+                      href="https://qcsa.vercel.app/" 
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="px-8 py-4 text-lg font-kantumruy text-white font-semibold rounded-full hover:opacity-80 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block text-center transition-all duration-200"                      style={{
                         background: 'linear-gradient(to right, #3b82f6, #8b5cf6, #f472b6)'
                       }}
