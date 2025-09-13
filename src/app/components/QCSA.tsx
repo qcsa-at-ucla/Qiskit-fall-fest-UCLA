@@ -40,7 +40,7 @@ export default function QCSA() {
 
                 <div className="space-y-4">
                   <p className="text-lg md:text-xl leading-relaxed font-kantumruy text-white">
-                    The premier quantum science and technology organization at UCLA. Host talks by professors, students, and other institutions. Undergrad and Grad organization under CQSE for everything under the umbrella of quantum information science, including quantum computers, sensors, and algorithms.
+                    We&apos;re UCLA’s premier quantum science and technology organization, bringing together undergraduates and graduates under CQSE. We host talks by faculty, students, and partner institutions, covering the full spectrum of quantum information science: from quantum computers and sensors to algorithms and beyond.
                   </p>
                 </div>
                 
