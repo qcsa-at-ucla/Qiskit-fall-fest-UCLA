@@ -53,12 +53,6 @@ export default function MainWebsiteHeader() {
               href="/schedule" 
               className="text-white hover:text-gray-200 font-semibold text-lg transition-colors duration-200"
             >
-              Event
-            </Link>
-            <Link 
-              href="/team" 
-              className="text-white hover:text-gray-200 font-semibold text-lg transition-colors duration-200"
-            >
               Team
             </Link>
             <Link 
@@ -114,13 +108,6 @@ export default function MainWebsiteHeader() {
               </Link>
               <Link 
                 href="/events" 
-                className="text-white hover:text-black font-semibold text-lg transition-colors duration-200 py-2 px-2 hover:bg-white hover:bg-opacity-20 rounded-md"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Event
-              </Link>
-              <Link 
-                href="/team" 
                 className="text-white hover:text-black font-semibold text-lg transition-colors duration-200 py-2 px-2 hover:bg-white hover:bg-opacity-20 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
