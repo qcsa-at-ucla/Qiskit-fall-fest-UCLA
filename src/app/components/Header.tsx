@@ -50,7 +50,7 @@ export default function MainWebsiteHeader() {
               Home
             </Link>
             <Link 
-              href="/schedule" 
+              href="/team" 
               className="text-white hover:text-gray-200 font-semibold text-lg transition-colors duration-200"
             >
               Team
@@ -106,8 +106,9 @@ export default function MainWebsiteHeader() {
               >
                 Home
               </Link>
+
               <Link 
-                href="/events" 
+                href="/team" 
                 className="text-white hover:text-black font-semibold text-lg transition-colors duration-200 py-2 px-2 hover:bg-white hover:bg-opacity-20 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
