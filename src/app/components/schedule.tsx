@@ -151,7 +151,7 @@ const Schedule: React.FC = () => {
               onClick={() => toggleExpanded(index)}
             >
               {/* Background overlay for better text readability */}
-              <div className="absolute inset-0 bg-black/20 rounded-2xl"></div>
+              
               
               {/* Content */}
               <div className="relative z-10">
@@ -210,7 +210,7 @@ const Schedule: React.FC = () => {
                         }}
                       >
                         {/* Background overlay for better text readability */}
-                        <div className="absolute inset-0 bg-black/30 rounded-lg"></div>
+                      
                         
                         <div className="flex flex-col md:flex-row md:items-start gap-4 relative z-10">
                           <div className="md:w-48 flex-shrink-0">
