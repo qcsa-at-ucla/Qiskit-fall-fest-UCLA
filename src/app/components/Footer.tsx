@@ -80,8 +80,20 @@ export default function MainWebsiteFooter() {
             className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200"
           >
             <div className="flex items-center space-x-3">
-             <div className="bg-white px-4 py-2 font-bold text-lg" style={{ color: '#234284' }}>
+               <div 
+                className="bg-white px-4 py-2">
+                  <span 
+                  className="font-bold text-lg" 
+                  style={{ 
+                  backgroundImage: 'linear-gradient(90deg, #4589FF 33%, #B471F2 66%, #F57CBD 100%)',
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  color: 'transparent',
+                  WebkitTextFillColor: 'transparent'
+                }}
+                  >
                 UCLA
+                  </span>
               </div>
               <div className="text-white">
                 <div className="font-semibold text-sm">Center for Quantum Science</div>
