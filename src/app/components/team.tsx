@@ -27,7 +27,7 @@ const boardMembers = [
   {
     id: 3,
     name: "Nicolas Dirnegger",
-    role: "Quantum Devices",
+    role: "Secretary",
     major: "Electrical Engineering",
     year: "PhD Student",
     bio: "Nicolas received a Bachelor of Science in Electrical Engineering at ETH Zurich, Switzerland in 2022 and a Master of Science in Physics at the University of California, Los Angeles in 2023. He is currently pursuing a PhD in Electrical Engineering in the NarangLab. Currently, his main research focus is on quantum sensing and quantum networks. He also has research interests in quantum error correction and quantum computation. Feel free to reach out if you want to go surfing!",
@@ -72,7 +72,7 @@ const boardMembers = [
     major: "Physics",
     year: "2nd Year",
     bio: "Ilaana is an undergraduate at UCLA studying Biophysics and on the QCSA leadership board. She is involved in the research of computational fluid dynamics to model blood vessels, talent development via mixed-methods psychology, and modeling distant stars in the Milky Way galaxy. Ilaana has previously worked with the American Cancer Society, ACM, City of Austin Law Department, Society of Robotic Surgeons, and Ascension Seton Medical Center in Austin. At UCLA, Ilaana is an editor at the Society and Genetics Research Journal and co-manager of the Upsilon Lab CFD group. She is also a nationally registered Emergency Medical Technician. Outside of her academic involvements, Ilaana loves Roblox, Minecraft, and caffeine. ",
-    image: "/images/ilaana.png",
+    image: "/images/Ilaana.png",
     linkedin: "https://www.linkedin.com/in/ilaanak/"
   },
   {
@@ -88,8 +88,8 @@ const boardMembers = [
   {
     id: 11,
     name: "Connor Engel",
-    role: "Technology Officer",
-    major: "Computer Science",
+    role: "Events & Advertisement",
+    major: "Physics",
     year: "3rd Year",
     bio: "Connor is a third-year undergraduate student majoring in Physics. He currently works as a research assistant in Professor Qianhui Shi’s laboratory, where he contributes to condensed matter physics. Connor is passionate about exploring the fundamental principles of physics and is particularly fascinated by the potential of photonics in advancing quantum computing technologies. He also has an adorable dog who is terrified of Connor getting weird ideas about boxes and superpositions.",
     image: "/images/Connor.png",
@@ -99,7 +99,7 @@ const boardMembers = [
     id: 12,
     name: "Shreya Shirsathe",
     role: "Events & Advertisement",
-    major: "Physics",
+    major: "Computer Engineering",
     year: "3rd Year",
     bio: "Shreya is a 3rd-year undergraduate Computer Engineering student. She is interested in quantum algorithms and hybrid quantum-classical systems. She enjoys connecting with others who share a passion for quantum computing and exploring how classical and quantum systems can work together. Outside of school, she enjoys snowboarding, dancing, and playing the guitar.",
     image: "/images/Shreya.png",
