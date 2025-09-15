@@ -196,12 +196,12 @@ const InfiniteCarousel = ({ direction = 'left' }: { direction?: 'left' | 'right'
           
           {/* Contact information */}
           <div className="text-center mt-8 mb-6">
-            <p className="text-white text-lg font-kamtamruy">
+            <p className="text-white text-2xl  font-kantumruy">
               If you&apos;re an interested sponsor or have any inquiries,<br />
               please contact us at{' '}
               <a
                 href="mailto:quantum.ucla@gmail.com"
-                className="transition-colors duration-200 gradient-text"
+                className="transition-colors duration-200 gradient-text text-2xl font-bold font-kantumruy"
                 style={{
                   backgroundImage: 'linear-gradient(90deg, #fb7185 0%, #a78bfa 50%, #60a5fa 100%)',
                   WebkitBackgroundClip: 'text',

@@ -21,7 +21,7 @@ export default function SpeakerCard({name, img} : SpeakerProps ) {
             />
           */}
         </div>
-        <p className="mt-8 text-white text-center w-full">{name}</p>
+        <p className="mt-8 text-white text-center w-full font-kantumruy">{name}</p>
     </div>
   )
 }

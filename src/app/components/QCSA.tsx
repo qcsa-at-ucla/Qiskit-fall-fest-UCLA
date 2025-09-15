@@ -25,7 +25,7 @@ export default function QCSA() {
             <div className="lg:w-6/12 lg:mr-8 w-full">
               <div className="space-y-8 text-left">
               <h2 
-                className="text-4xl md:text-5xl font-bold font-kantumruy mb-6"
+                className="text-4xl font-kantumruy font-bold mb-6"
                 style={{
                     background: 'linear-gradient(90deg, #9174FF 0%, #B471F2 25%, #F57CBD 50%, #B471F2 75%, #9174FF 100%)',
                     WebkitBackgroundClip: 'text',
@@ -39,19 +39,19 @@ export default function QCSA() {
 
 
                 <div className="space-y-4">
-                  <p className="text-lg md:text-xl leading-relaxed font-kantumruy text-white">
+                  <p className="text-2xl leading-relaxed font-kantumruy text-white">
                     We&apos;re UCLA’s premier quantum science and technology organization, bringing together undergraduates and graduates under CQSE. We host talks by faculty, students, and partner institutions, covering the full spectrum of quantum information science: from quantum computers and sensors to algorithms and beyond.
                   </p>
                 </div>
                 
                 {/* Learn More Button */}
                 <div className="pt-6">
-                  <div className="flex justify-start">
+                  <div className="flex justify-center ">
                     <Link 
                       href="https://qcsa.vercel.app/" 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-8 py-4 text-lg font-kantumruy text-white font-semibold rounded-full hover:opacity-80 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block text-center transition-all duration-200"                      style={{
+                      className="px-8 py-4 text-3xl  font-kantumruy text-white font-bold rounded-full hover:opacity-80 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block text-center transition-all duration-200"                      style={{
                         background: 'linear-gradient(to right, #3b82f6, #8b5cf6, #f472b6)'
                       }}
                     >

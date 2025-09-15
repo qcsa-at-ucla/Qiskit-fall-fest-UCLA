@@ -157,15 +157,16 @@ const Schedule: React.FC = () => {
               <div className="relative z-10">
                 <div className="flex items-center justify-between">
                   <div className="flex-1">
-                    <h3 className="text-3xl font-bold text-white mb-3">
-                      {day.day} - {day.title}
+                    <h3 className="text-6xl font-kantumruy text-white mb-3">
+                      <span className="font-bold">{day.day}</span> - <span className="font-normal">{day.title}</span>
                     </h3>
-                    <p className="text-white/90 text-xl mb-4 leading-relaxed">{day.subtitle}</p>
+                    
+                    <p className="text-white/90 text-4xl mb-4 leading-relaxed font-kantumruy">{day.subtitle}</p>
                     <div className="flex items-center gap-2 text-white/80">
                       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                       </svg>
-                      <span className="text-lg">Location</span>
+                      <span className="text-2xl font-kantumruy">Location</span>
                     </div>
                   </div>
                   <div className="ml-4">
@@ -188,11 +189,13 @@ const Schedule: React.FC = () => {
                 </div>
               </div>
 
+
+
               {/* Expanded Schedule Content */}
               {expandedDay === index && (
                 <div className="relative z-10 mt-8 pt-6 border-t border-white/30">
                   <div className="space-y-4">
-                    <div className="mb-4">
+                    <div className="mb-4" >
                       <p className="text-white/90 text-lg mb-2">{day.location}</p>
                       {day.capacity && (
                         <p className="text-white/70">{day.capacity}</p>
@@ -201,12 +204,11 @@ const Schedule: React.FC = () => {
                     {day.schedule.map((item, itemIndex) => (
                       <div
                         key={itemIndex}
-                        className="backdrop-blur-sm rounded-lg p-4 border border-white/20 relative overflow-hidden"
+                        className="rounded-2xl p-8 cursor-pointer hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 relative overflow-hidden"
                         style={{
                           backgroundImage: 'url(/images/schedule_rectangle.png)',
-                          backgroundSize: 'cover',
-                          backgroundPosition: 'center',
-                          backgroundRepeat: 'no-repeat'
+                      
+                          
                         }}
                       >
                         {/* Background overlay for better text readability */}
@@ -214,15 +216,15 @@ const Schedule: React.FC = () => {
                         
                         <div className="flex flex-col md:flex-row md:items-start gap-4 relative z-10">
                           <div className="md:w-48 flex-shrink-0">
-                            <span className="inline-block bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium">
+                            <span className="inline-block bg-white/20 text-white px-3 py-1 rounded-full text-sm font-kantumruy font-medium">
                               {item.time}
                             </span>
                           </div>
                           <div className="flex-1">
-                            <h4 className="text-xl font-semibold text-white mb-2">
+                            <h4 className="text-xl font-kantumruy font-semibold text-white mb-2">
                               {item.title}
                             </h4>
-                            <p className="text-white/80 leading-relaxed">
+                            <p className="text-white/80 leading-relaxed font-kantumruy">
                               {item.description}
                             </p>
                           </div>
@@ -237,7 +239,7 @@ const Schedule: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-2xl">
             Event schedule subject to change. Check back for updates closer to the event.
           </p>
         </div>

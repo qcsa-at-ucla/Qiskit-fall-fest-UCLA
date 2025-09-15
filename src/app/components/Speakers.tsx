@@ -24,7 +24,7 @@ export default function Speakers() {
             backgroundClip: 'text'
         }}
     > Meet the Speakers</h2>
-        <div className = 'mt-20 mb-40 lg:mb-80 mx-auto max-w-5xl grid grid-cols-2 md:grid-cols-4 gap-8 px-4 place-items-center'>
+        <div className = 'mt-20 mb-40 lg:mb-80 mx-auto max-w-5xl grid grid-cols-2 md:grid-cols-4 gap-8 px-4 place-items-center font-kantumruy text-2xl'>
             {speakers.map((s) => (
                 <SpeakerCard key = {s.name} name={s.name} img = {s.img} />
             ))}

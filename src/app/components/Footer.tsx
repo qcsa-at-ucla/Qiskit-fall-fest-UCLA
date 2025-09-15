@@ -77,7 +77,7 @@ export default function MainWebsiteFooter() {
                <div 
                 className="bg-white px-4 py-2">
                   <span 
-                  className="font-bold text-lg" 
+                  className="font-kantumruy font-bold text-lg" 
                   style={{ 
                   backgroundImage: 'linear-gradient(90deg, #4589FF 33%, #B471F2 66%, #F57CBD 100%)',
                   WebkitBackgroundClip: 'text',
@@ -90,8 +90,8 @@ export default function MainWebsiteFooter() {
                   </span>
               </div>
               <div className="text-white">
-                <div className="font-semibold text-sm">Center for Quantum Science</div>
-                <div className="font-semibold text-sm">& Engineering</div>
+                <div className="font-kantumruy font-semibold text-sm">Center for Quantum Science</div>
+                <div className="font-kantumruy font-semibold text-sm">& Engineering</div>
               </div>
             </div>
             </Link>

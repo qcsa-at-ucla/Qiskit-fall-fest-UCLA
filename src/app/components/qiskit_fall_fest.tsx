@@ -7,7 +7,7 @@ export default function QiskitFallFest() {
         
         {/* Left Content */}
         <div className="flex-1 text-left">
-          <h1 className="text-white text-5xl lg:text-7xl mb-14">
+          <h1 className="text-white text-7xl mb-14 font-kantumruy">
             IBM Qiskit
           </h1>
           
@@ -38,11 +38,11 @@ export default function QiskitFallFest() {
             Specific Date
           </div> */}
           
-          <div className="text-white text-xl lg:text-3xl mb-8 px-10">
+          <div className="text-white text-4xl mb-4 px-0 font-kantumruy">
             October 17th - 19th
           </div>
           
-          <button className=" px-16 py-10 text-2xl lg:text-5xl font-bold text-white rounded-full bg-gradient-to-r from-[#4589FF] via-[#A56EFF] to-[#FF7EB6] hover:opacity-90 transition-opacity duration-300 shadow-lg">
+          <button className=" px-16 py-10 text-2xl lg:text-5xl font-kantumruy font-bold text-white rounded-full bg-gradient-to-r from-[#4589FF] via-[#A56EFF] to-[#FF7EB6] hover:opacity-90 transition-opacity duration-300 shadow-lg">
             Register
           </button>
         </div>
