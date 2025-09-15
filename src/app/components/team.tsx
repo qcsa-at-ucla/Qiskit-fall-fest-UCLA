@@ -111,6 +111,12 @@ export default function TeamPage() {
           <div
             key={member.id}
             className="relative bg-gray-800 rounded-lg p-6 transform transition-transform hover:scale-105 group w-80"
+            onClick={() => {
+              // On small screens, clicking the card toggles the bio (unless clicking the "i" button)
+              if (isSmallScreen) {
+                setExpandedMember(expandedMember === member.id ? null : member.id);
+              }
+            }}
           >
             <div className="flex flex-col items-center relative z-0">
               <div className="w-32 h-32 mb-4">
@@ -128,18 +134,19 @@ export default function TeamPage() {
               <p className="text-gray-400 mb-1 text-center font-kantumruy">{member.major}, {member.year}</p>
             </div>
 
-            {/* Info toggle button for mobile/keyboard users only */}
+            {/* LinkedIn button for mobile users only */}
             <button
               type="button"
               onClick={(e) => {
-                e.stopPropagation();
-                setExpandedMember(expandedMember === member.id ? null : member.id);
+                e.stopPropagation(); // Prevent card click from toggling bio
+                // Navigate to LinkedIn
+                if (member.linkedin) {
+                  window.open(member.linkedin, '_blank', 'noopener,noreferrer');
+                }
               }}
-              aria-expanded={expandedMember === member.id}
-              aria-controls={`bio-${member.id}`}
               className="absolute top-3 right-3 z-20 bg-gray-700 text-white p-2 rounded-full focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 lg:hidden"
             >
-              <span className="sr-only">Toggle bio for {member.name}</span>
+              <span className="sr-only">Open {member.name} on LinkedIn</span>
               i
             </button>
 
@@ -179,6 +186,12 @@ export default function TeamPage() {
           <div
             key={member.id}
             className="relative bg-gray-800 rounded-lg p-6 transform transition-transform hover:scale-105 group"
+            onClick={() => {
+              // On small screens, clicking the card toggles the bio (unless clicking the "i" button)
+              if (isSmallScreen) {
+                setExpandedMember(expandedMember === member.id ? null : member.id);
+              }
+            }}
           >
             <div className="flex flex-col items-center relative z-0">
               <div className="w-32 h-32 mb-4">
@@ -196,18 +209,19 @@ export default function TeamPage() {
               <p className="text-gray-400 mb-1 text-center font-kantumruy">{member.major}, {member.year}</p>
             </div>
 
-            {/* Info toggle button for mobile/keyboard users only */}
+            {/* LinkedIn button for mobile users only */}
             <button
               type="button"
               onClick={(e) => {
-                e.stopPropagation();
-                setExpandedMember(expandedMember === member.id ? null : member.id);
+                e.stopPropagation(); // Prevent card click from toggling bio
+                // Navigate to LinkedIn
+                if (member.linkedin) {
+                  window.open(member.linkedin, '_blank', 'noopener,noreferrer');
+                }
               }}
-              aria-expanded={expandedMember === member.id}
-              aria-controls={`bio-${member.id}`}
               className="absolute top-3 right-3 z-20 bg-gray-700 text-white p-2 rounded-full focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 lg:hidden"
             >
-              <span className="sr-only">Toggle bio for {member.name}</span>
+              <span className="sr-only">Open {member.name} on LinkedIn</span>
               i
             </button>
 
@@ -231,6 +245,23 @@ export default function TeamPage() {
           </div>
           );
         })}
+      </div>
+
+      {/* Call to action section */}
+      <div className="mt-16 text-center"style={{
+          background: 'linear-gradient(to right, #8b5cf6, #8b5cf6, #f472b6, #8b5cf6, #3b82f6)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text'
+        }}>
+        <a
+          href="https://qcsa.vercel.app/about"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-xl md:text-4xl font-kantumruy font-semibold text-white hover:text-purple-300 transition-colors duration-200 decoration-purple-400 hover:decoration-purple-300"
+        >
+          Meet the team that made this Qiskit Fall Fest event possible!
+        </a>
       </div>
 
     </div>
