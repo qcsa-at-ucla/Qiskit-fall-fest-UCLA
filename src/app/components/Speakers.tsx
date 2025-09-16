@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 export default function Speakers() {
     const speakers = [
-        { name: "Alexander Jürgens", img: "/img/alexander.jpg" },
-        { name: "Nicolas Dirnegger", img: "/img/nicolas.jpg" },
-        { name: "Victor Yu", img: "/img/victor.jpg" },
-        { name: "Cody Fan", img: "/img/cody.jpg" },
+        { name: "Alexander Jürgens", img: "/images/alexander Jurgens.png" },
+        { name: "Nicolas Dirnegger", img: "/images/Nicolas Dirnegger.png" },
+        { name: "Victor Yu", img: "/images/Victor Yu.png" },
+        { name: "Cody Fan", img: "/images/Cody Fan.png" },
     ];
 
 
@@ -34,7 +34,9 @@ export default function Speakers() {
         
         <div className="flex justify-center">
             <Link 
-                    href="" 
+                    href="https://docs.google.com/forms/d/1qEnczUAZCPBf7nwKpcQiose-gXdhg1cWlr1eX4v-CkM/edit" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="px-16 py-6 text-3xl md:text-4xl lg:text-5xl font-kantumruy text-white font-semibold rounded-[38px] hover:opacity-80 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block text-center transition-all duration-200"
                     style={{
                     background: 'linear-gradient(to right, #3b82f6, #8b5cf6, #f472b6)'

@@ -115,7 +115,7 @@ const Schedule: React.FC = () => {
   };
 
   return (
-        <section className="py-16 bg-black text-white">
+        <section className="py-16 bg-[black] text-white">
         <div className="container mx-auto px-4">
             <div className="text-center mb-12">
             <div className="bg-black flex flex-col items-center justify-center py-2">

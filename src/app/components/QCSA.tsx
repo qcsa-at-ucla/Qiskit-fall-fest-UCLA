@@ -11,13 +11,13 @@ export default function QCSA() {
             {/* Image Section - Now on the left */}
             <div className="lg:w-6/12 lg:ml-8 w-full">
               <div className="flex justify-center lg:justify-start">
-                <div 
-                  className="w-full max-w-md lg:max-w-lg xl:max-w-xl relative rounded-lg"
-                  style={{ background: 'linear-gradient(to right,#C3B5FF, #DFB1F9, #F0B3EB, #DFB1F9, #C3B5FF)', }}
-                >
-                  {/* Placeholder for image content */}
-                  <div className="w-full h-80 lg:h-96 rounded-lg"></div>
-                </div>
+                <Image
+                  src="/images/about-me-photo.png"
+                  alt="QCSA Logo"
+                  width={600}
+                  height={600}
+                  className="object-contain max-w-full h-auto"
+                />
               </div>
             </div>
             
