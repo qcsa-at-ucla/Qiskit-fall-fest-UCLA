@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Kantumruy_Pro } from "next/font/google";
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const kantumruy = Kantumruy_Pro({
   subsets: ["latin"],
+  weight: ["400", "700"], // choose what you need
+  variable: "--font-kantumruy",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Qiskit Fall Fest 2025 @ UCLA",
@@ -30,9 +28,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            .skip-link {
+              position: absolute;
+              top: -40px;
+              left: 6px;
+              background: #000;
+              color: #fff;
+              padding: 8px;
+              text-decoration: none;
+              z-index: 1000;
+            }
+            .skip-link:focus {
+              top: 6px;
+            }
+          `
+        }} />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={kantumruy.variable}
       >
+        <a href="#main-content" className="skip-link">Skip to main content</a>
+        <a href="#footer" className="skip-link">Skip to footer</a>
         {children}
       </body>
     </html>

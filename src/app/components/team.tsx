@@ -10,7 +10,7 @@ const boardMembers = [
     name: "Oneka Singh",
     role: "Lead Organizer",
     major: "Physics",
-    year: "1st Year Transfer",
+    year: "3rd Year",
     bio: "She is a student at UCLA studying physics, and will earn her bachelor's in physics in 2026. She really really loves physics--to the point where she is able to graduate at 19, and begin hands-on working in the quantum computing field. Currently, she is expanding quantum computing field experience, and is developing strong skills in quantum software and hardware, with a heavy focus on quantum information theory. She codes mainly in Python, and C++, and has experience working with Qiskit and AI. She is also fluent in two languages: English, and German. She also has built several quantum-related algorithms and projects with various passionate people, and has a great full-round work-collaboration ethic. She is also very active, engaged, and passionate in her work, and firmly stands by discipline, teamwork, and organization. If you are interested in quantum computing, do not hesitate to reach out, as she appreciates expanding her social circle, and working with new people to solve the challenges of tomorrow.",
     linkedin: "https://www.linkedin.com/in/oneka-singh-924360296/",
     image: "/images/oneka.png",
