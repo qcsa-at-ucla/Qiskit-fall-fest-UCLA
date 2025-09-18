@@ -43,7 +43,9 @@ export default function QiskitFallFest() {
           </div>
           
           <button className=" px-16 py-10 text-2xl lg:text-5xl font-kantumruy font-bold text-white rounded-full bg-gradient-to-r from-[#4589FF] via-[#A56EFF] to-[#FF7EB6] hover:opacity-90 transition-opacity duration-300 shadow-lg">
+            <a href="https://docs.google.com/forms/d/1qEnczUAZCPBf7nwKpcQiose-gXdhg1cWlr1eX4v-CkM/edit" target="_blank" rel="noopener noreferrer"> 
             Register
+            </a>
           </button>
         </div>
       </div>
