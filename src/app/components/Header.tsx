@@ -98,7 +98,7 @@ export default function MainWebsiteHeader() {
           <div className="border-t border-white border-opacity-30 pt-4">
             <div className="flex flex-col space-y-3">
               <Link 
-                href="https://qcsa.vercel.app/"
+                href="https://qiskit-fall-fest-ucla.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-black font-kantumruy font-semibold text-lg transition-colors duration-200 py-2 px-2 hover:bg-white hover:bg-opacity-20 rounded-md"
