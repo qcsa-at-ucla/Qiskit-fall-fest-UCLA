@@ -22,87 +22,50 @@ const scheduleData: DaySchedule[] = [
     day: "Day 1",
     title: "Kickoff",
     subtitle: "Opening Ceremony & Networking",
-    location: "Main Stage Hall + Patio | Hybrid (In-person + Livestream)",
-    capacity: "100 in-person, ~300 online",
+    location: "Boelter Hall: 8500",
+    capacity: "50-60 in-person + online",
     schedule: [
       {
-        time: "10:00 am – 11:00 am",
-        title: "Opening Speaker",
-        description: "Potential IBM speaker. Intro to this year's theme (e.g., history of quantum science & innovation). Broad, inspiring, non-technical talk."
+        time: "12:30 pm – 2:00 pm",
+        title: "Workshop Part I",
+        description: "Workshop I: Guided learning with Qiskit experts (basic gates, quantum circuits, Grover's algorithm, transpilation, etc.)."
       },
       {
-        time: "11:00 am – 1:00 pm",
-        title: "Networking + Refreshments",
-        description: "Drinks & bites served; informal networking in hall and patio."
+        time: "2:00 pm – 3:00 pm",
+        title: "Speaker Presentation + Q&A + 15 min break",
+        description: "Speaker talk from IBM or UCLA professor on quantum computing fundamentals and future directions."
       },
       {
-        time: "1:00 pm – 3:00 pm",
-        title: "Career Panel",
-        description: "10–20 professionals in quantum (academia + industry) discuss their work and paths into the field. Hybrid Q&A."
-      },
-      {
-        time: "3:00 pm – 7:00/9:00 pm",
-        title: "Speaker Sessions",
-        description: "1–3 additional talks from experts on the future of quantum computing, applications, and advantages (broad audience focus)."
+        time: "3:00 pm – 4:30 pm",
+        title: "Workshop Part II",
+        description: "Hands-on Qiskit challenges with experts roaming for help."
       }
     ]
   },
+
   {
     day: "Day 2",
-    title: "Qiskit Workshop",
-    subtitle: "Hands-on Learning with Qiskit",
-    location: "Workshop Room (workspace style: tables, outlets, screens, whiteboards)",
-    capacity: "Cap 100 in-person (application only) + ~300 online",
-    schedule: [
-      {
-        time: "10:00 am – 1:00 pm",
-        title: "Morning Workshop Session",
-        description: "Guided learning with Qiskit experts (basic gates, quantum circuits, Grover's algorithm, transpilation, etc.)."
-      },
-      {
-        time: "1:00 pm – 3:00 pm",
-        title: "Catered Lunch + Socializing",
-        description: "Networking break with provided meals."
-      },
-      {
-        time: "3:00 pm – 6:00 pm",
-        title: "Afternoon Workshop Session",
-        description: "Hands-on Qiskit challenges with 5–20 experts roaming for help. One expert dedicated to online support."
-      }
-    ]
-  },
-  {
-    day: "Day 3",
     title: "Hackathon & Closing Ceremony",
     subtitle: "Build & Present Your Quantum Project",
-    location: "Workshop Room (for hacking) + Main Stage (for ceremony)",
+    location: "Boelter Hall: 8500 for Hackathon and Mong for Closing Ceremony",
     capacity: "50 hackers (application only) + 50–100 ceremony attendees",
     schedule: [
       {
-        time: "9:00 am",
+        time: "12:30 pm – 3:30 pm",
         title: "Hackathon Check-in",
-        description: "Registration and team formation."
+        description: "Registration and team formation. Feel free to come early at Boelter 8500 around 9 am to meet others and form teams!"
       },
       {
-        time: "9:30 am – 5:00 pm",
-        title: "Hackathon",
-        description: "Topic announced, teams work on Jupyter notebooks. Experts available for support. Catering snack bar provided."
+        time: "3:30 pm – 6:00 pm",
+        title: "Speaker Presentation + 15 min break",
+        description: "Speaker talk from IBM or UCLA professor on quantum computing applications and future directions."
       },
       {
-        time: "5:00 pm – 6:00 pm",
-        title: "Team Presentations",
-        description: "Each team presents 2–3 min + submits notebook. Judges review."
+        time: "6:00 pm – 8:30 pm",
+        title: "Closing Ceremony at Mong Learning Center (Engineering VI)",
+        description: "Project presentations, judging, awards, and networking!"
       },
-      {
-        time: "6:30 pm – 7:30 pm",
-        title: "Closing Ceremony",
-        description: "Closing speech (potential IBM speaker). 1–2 additional short speeches (e.g., UCLA alumni, IBM quantum). Build-up to awards."
-      },
-      {
-        time: "7:30 pm – 8:00 pm",
-        title: "Hackathon Winner Announcements",
-        description: "Award ceremony and celebration."
-      }
+
     ]
   }
 ];

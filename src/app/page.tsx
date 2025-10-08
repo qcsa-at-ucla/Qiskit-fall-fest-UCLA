@@ -17,8 +17,8 @@ export default function Home() {
       <main id="main-content" className="flex-grow">
         <QCSA />
         <IBM />
-        <SponsorsText />
-        <Sponsors />
+        {/* <SponsorsText /> */}
+        {/* <Sponsors /> */}
         <Schedule />
         <Speakers/>
         {/* Add other components or content here as needed */}

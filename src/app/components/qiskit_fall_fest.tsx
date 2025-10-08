@@ -39,7 +39,7 @@ export default function QiskitFallFest() {
           </div> */}
           
           <div className="text-white text-4xl mb-4 px-0 font-kantumruy">
-            October 17th - 19th
+            October 18th - 19th
           </div>
           
           <button className=" px-16 py-10 text-2xl lg:text-5xl font-kantumruy font-bold text-white rounded-full bg-gradient-to-r from-[#4589FF] via-[#A56EFF] to-[#FF7EB6] hover:opacity-90 transition-opacity duration-300 shadow-lg">
