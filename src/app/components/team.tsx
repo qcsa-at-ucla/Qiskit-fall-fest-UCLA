@@ -85,7 +85,7 @@ export default function TeamPage() {
       />
       
       <h2
-        className="font-kantumruy text-4xl sm:text-3xl md:text-6xl font-semibold mb-4 sm:mb-6 md:mb-8 text-center"
+        className="font-kantumruy text-4xl sm:text-3xl md:text-4xl font-semibold mb-4 sm:mb-6 md:mb-8 text-center"
         style={{
           background: 'linear-gradient(to right, #8b5cf6, #8b5cf6, #f472b6, #8b5cf6, #3b82f6)',
           WebkitBackgroundClip: 'text',
@@ -97,86 +97,9 @@ export default function TeamPage() {
       </h2>
       
       
-      {/* First row: Lead Organizer centered */}
-      <div className="flex justify-center mb-12 max-w-6xl mx-auto">
-        {boardMembers
-          .filter(member => member.role === "Lead Organizer")
-          .map((member) => {
-          const isExpanded = expandedMember === member.id;
-          const overlayActiveClass = isExpanded
-            ? (isSmallScreen ? 'opacity-100 pointer-events-auto z-30' : 'opacity-100 pointer-events-auto')
-            : 'opacity-0 pointer-events-none';
-
-          return (
-          <div
-            key={member.id}
-            className="relative bg-gray-800 rounded-lg p-6 transform transition-transform hover:scale-105 group w-80"
-            onClick={() => {
-              // On small screens, clicking the card toggles the bio (unless clicking the "i" button)
-              if (isSmallScreen) {
-                setExpandedMember(expandedMember === member.id ? null : member.id);
-              }
-            }}
-          >
-            <div className="flex flex-col items-center relative z-0">
-              <div className="w-32 h-32 mb-4">
-                <Image
-                  src={member.image}
-                  alt={`${member.name} profile photo`}
-                  width={128}
-                  height={128}
-                  className="rounded-full object-cover w-full h-full"
-                  onError={(e) => { e.currentTarget.src = '/images/placeholder-profile.png'; }} 
-                />
-              </div>
-              <h3 className="text-xl font-kantumruy font-semibold mb-1 text-center">{member.name}</h3>
-              <p className="text-gray-400 mb-1 text-center font-kantumruy">{member.role}</p>
-              <p className="text-gray-400 mb-1 text-center font-kantumruy">{member.major}, {member.year}</p>
-            </div>
-
-            {/* LinkedIn button for mobile users only */}
-            <button
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation(); // Prevent card click from toggling bio
-                // Navigate to LinkedIn
-                if (member.linkedin) {
-                  window.open(member.linkedin, '_blank', 'noopener,noreferrer');
-                }
-              }}
-              className="absolute top-3 right-3 z-20 bg-gray-700 text-white p-2 rounded-full focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 lg:hidden"
-            >
-              <span className="sr-only">Open {member.name} on LinkedIn</span>
-              i
-            </button>
-
-            {/* Bio overlay: clickable on desktop hover, toggleable on mobile */}
-            <div
-              id={`bio-${member.id}`}
-              role="region"
-              aria-hidden={!(expandedMember === member.id)}
-              className={`absolute inset-0 bg-black bg-opacity-90 text-white p-3 transition-opacity duration-200 flex items-center justify-center text-sm md:text-xs text-center overflow-auto cursor-pointer
-                ${overlayActiveClass} md:group-hover:opacity-100 md:group-hover:pointer-events-auto md:group-hover:z-30`}
-              style={{backdropFilter: 'blur(4px)', WebkitOverflowScrolling: 'touch', touchAction: 'pan-y'}}
-              onClick={(e) => {
-                // Only navigate to LinkedIn if clicking on the overlay background, not the text content
-                if (e.target === e.currentTarget && member.linkedin) {
-                  window.open(member.linkedin, '_blank', 'noopener,noreferrer');
-                }
-              }}
-            >
-              <p className="max-h-[30vh] overflow-auto text-sm md:text-xs leading-5" style={{WebkitOverflowScrolling: 'touch'}}>{member.bio}</p>
-            </div>
-          </div>
-          );
-        })}
-      </div>
-
-      {/* Second row: Co-Lead Organizers in 4 columns */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-        {boardMembers
-          .filter(member => member.role === "Co-Lead Organizer")
-          .map((member) => {
+      {/* All organizers in one row */}
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
+        {boardMembers.map((member) => {
           const isExpanded = expandedMember === member.id;
           const overlayActiveClass = isExpanded
             ? (isSmallScreen ? 'opacity-100 pointer-events-auto z-30' : 'opacity-100 pointer-events-auto')
@@ -258,9 +181,20 @@ export default function TeamPage() {
           href="https://qcsa.vercel.app/about"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block text-xl md:text-4xl font-kantumruy font-semibold text-white hover:text-purple-300 transition-colors duration-200 decoration-purple-400 hover:decoration-purple-300"
+          className="inline-block text-xl md:text-6xl font-kantumruy font-semibold text-white hover:text-purple-300 transition-colors duration-200 decoration-purple-400 hover:decoration-purple-300"
         >
           Meet the team that made this Qiskit Fall Fest event possible!
+        </a>
+      </div>
+      
+      <div className="mt-6 text-center">
+        <a
+          href="https://qcsa-ucla.org/about"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-8 py-3 text-lg font-kantumruy font-bold text-white bg-gradient-to-r from-purple-600 to-blue-600 rounded-full hover:from-purple-700 hover:to-blue-700 transition-all duration-200 transform hover:scale-105 shadow-lg"
+        >
+          Take me there!
         </a>
       </div>
 
