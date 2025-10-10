@@ -4,10 +4,9 @@ import Link from 'next/link';
 
 export default function Speakers() {
     const speakers = [
-        { name: "Alexander Jürgens", img: "/images/alexander Jurgens.png" },
-        { name: "Nicolas Dirnegger", img: "/images/Nicolas Dirnegger.png" },
-        { name: "Victor Yu", img: "/images/Victor Yu.png" },
-        { name: "Cody Fan", img: "/images/Cody Fan.png" },
+        { name: "Amy Brown (USC)", img: "/images/usc.png" },
+        { name: "IBM Speaker", img: "" },
+        { name: "UCLA Speaker", img: "" },
     ];
 
 
@@ -24,7 +23,7 @@ export default function Speakers() {
             backgroundClip: 'text'
         }}
     > Meet the Speakers</h2>
-        <div className = 'mt-20 mb-40 lg:mb-80 mx-auto max-w-5xl grid grid-cols-2 md:grid-cols-4 gap-8 px-4 place-items-center font-kantumruy text-2xl'>
+        <div className = 'mt-20 mb-40 lg:mb-80 mx-auto max-w-5xl flex flex-wrap justify-center gap-8 px-4 font-kantumruy text-2xl'>
             {speakers.map((s) => (
                 <SpeakerCard key = {s.name} name={s.name} img = {s.img} />
             ))}
