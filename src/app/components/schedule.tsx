@@ -33,7 +33,7 @@ const scheduleData: DaySchedule[] = [
       {
         time: "2:00 pm – 3:00 pm",
         title: "Speaker Presentation + Q&A + 15 min break",
-        description: "Speaker talk from IBM or UCLA professor on quantum computing fundamentals and future directions."
+        description: "Speaker talk from UCLA/USC professor(s) on quantum computing fundamentals and future directions."
       },
       {
         time: "3:00 pm – 6:00 pm",
