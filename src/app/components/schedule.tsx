@@ -26,7 +26,7 @@ const scheduleData: DaySchedule[] = [
     capacity: "50-60 in-person + online",
     schedule: [
       {
-        time: "11:00 pm – 2:00 pm",
+        time: "11:00 am – 2:00 pm",
         title: "Workshop Part I",
         description: "Workshop I: Guided learning with Qiskit experts (basic gates, quantum circuits, Grover's algorithm, transpilation, etc.)."
       },
