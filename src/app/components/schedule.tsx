@@ -26,7 +26,7 @@ const scheduleData: DaySchedule[] = [
     capacity: "50-60 in-person + online",
     schedule: [
       {
-        time: "12:30 pm – 2:00 pm",
+        time: "11:00 pm – 2:00 pm",
         title: "Workshop Part I",
         description: "Workshop I: Guided learning with Qiskit experts (basic gates, quantum circuits, Grover's algorithm, transpilation, etc.)."
       },
@@ -36,7 +36,7 @@ const scheduleData: DaySchedule[] = [
         description: "Speaker talk from IBM or UCLA professor on quantum computing fundamentals and future directions."
       },
       {
-        time: "3:00 pm – 4:30 pm",
+        time: "3:00 pm – 6:00 pm",
         title: "Workshop Part II",
         description: "Hands-on Qiskit challenges with experts roaming for help."
       }
@@ -51,17 +51,12 @@ const scheduleData: DaySchedule[] = [
     capacity: "50 hackers (application only) + 50–100 ceremony attendees",
     schedule: [
       {
-        time: "12:30 pm – 3:30 pm",
+        time: "9:00 am – 5:30 pm",
         title: "Hackathon Check-in",
-        description: "Registration and team formation. Feel free to come early at Boelter 8500 around 9 am to meet others and form teams!"
+        description: "Hackathon! Team formation, topic announcement, and building time."
       },
       {
-        time: "3:30 pm – 6:00 pm",
-        title: "Speaker Presentation + 15 min break",
-        description: "Speaker talk from IBM or UCLA professor on quantum computing applications and future directions."
-      },
-      {
-        time: "6:00 pm – 8:30 pm",
+        time: "6:30 pm – 8:00 pm",
         title: "Closing Ceremony at Mong Learning Center (Engineering VI)",
         description: "Project presentations, judging, awards, and networking!"
       },
