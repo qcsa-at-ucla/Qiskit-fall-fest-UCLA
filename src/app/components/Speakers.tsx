@@ -5,8 +5,7 @@ import Link from 'next/link';
 export default function Speakers() {
     const speakers = [
         { name: "Amy Brown (USC)", img: "/images/usc.png" },
-        { name: "IBM Speaker", img: "" },
-        { name: "UCLA Speaker", img: "" },
+        { name: "Sophy Shin (IBM)", img: "" },
     ];
 
 
